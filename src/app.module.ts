@@ -1,11 +1,11 @@
 import { Module } from '@nestjs/common';
 import { AppController } from './app.controller';
 import { TypeOrmModule } from '@nestjs/typeorm';
-import { AuthModule } from './auth/auth.module.js';
-import { User } from './auth/user.entity.js';
-import { Transaction } from './transactions/transaction.entity.js';
-import { TransactionsModule } from './transactions/transactions.module.js';
-import { WebhookModule } from './webhook/webhook.module.js';
+import { AuthModule } from './auth/auth.module';
+import { User } from './auth/user.entity';
+import { Transaction } from './transactions/transaction.entity';
+import { TransactionsModule } from './transactions/transactions.module';
+import { WebhookModule } from './webhook/webhook.module';
 import { AppService } from './app.service';
 
 @Module({
